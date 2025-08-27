@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      PT Lancar Barokah Manfaat — Exporter of Coffee, Cloves & Charcoal
+    </title>
+    <meta
+      name="description"
+      content="PT Lancar Barokah Manfaat is an Indonesian export company specializing in coffee, cloves, coconut charcoal briquettes, and spices. Trusted by global buyers."
+    />
+    <meta
+      name="keywords"
+      content="Indonesia export coffee, cloves exporter, charcoal briquettes supplier, agricultural products export Indonesia, PT Lancar Barokah Manfaat"
+    />
+    <meta name="author" content="PT Lancar Barokah Manfaat" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="brand">
+        <img src="assets/logo.jpg" alt="PT LBM Logo" class="brand-logo" />
+        <div class="brand-meta">
+          <h1 class="brand-title">PT Lancar Barokah Manfaat</h1>
+          <!-- <span class="brand-tag">Indonesia Exporter</span> -->
+        </div>
+      </div>
+
+      <nav class="main-nav" id="navbar">
+        <a href="#about" data-i18n="nav.about">Tentang</a>
+        <a href="#products" data-i18n="nav.products">Produk</a>
+        <a href="#why" data-i18n="nav.why">Mengapa Kami</a>
+        <a href="#process" data-i18n="nav.process">Proses</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">Testimoni</a>
+        <a href="#contact" data-i18n="nav.contact">Kontak</a>
+      </nav>
+
+      <div class="header-actions">
+        <select
+          id="languageSwitcher"
+          aria-label="Language switcher"
+          class="lang-select"
+        >
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h1 class="hero-title" data-i18n="hero.title">
+          Suplayer Kopi Terpercaya Pilihan Anda
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Kami mengekspor kopi premium, cengkeh, briket arang kelapa, dan
+          lainnya — dipercaya oleh pembeli global.
+        </p>
+        <a
+          href="#contact"
+          class="btn btn-primary"
+          data-i18n="cta.contact"
+          style="text-decoration: none"
+          >Hubungi Kami</a
+        >
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="about.title">Tentang Kami</h2>
+        <p class="section-lead" data-i18n="about.text">
+          PT Lancar Barokah Manfaat adalah perusahaan ekspor Indonesia yang
+          mengkhususkan diri dalam komoditas pertanian berkualitas tinggi dan
+          produk olahan.
+        </p>
+      </div>
+      <!-- <div class="about-grid">
+        <div class="about-card shadow">
+          <img src="assets/about-1.jpg" alt="Quality control" />
+          <div class="about-card-body">
+            <h3 data-i18n="about.cards.0.title">Kualitas Ketat</h3>
+            <p class="muted" data-i18n="about.cards.0.desc">
+              Setiap batch diperiksa dan memenuhi standar internasional.
+            </p>
+          </div>
+        </div>
+        <div class="about-card shadow">
+          <img src="assets/about-2.jpg" alt="Sourcing" />
+          <div class="about-card-body">
+            <h3 data-i18n="about.cards.1.title">Sumber Tepercaya</h3>
+            <p class="muted" data-i18n="about.cards.1.desc">
+              Kemitraan langsung dengan petani & produsen lokal terbaik.
+            </p>
+          </div>
+        </div>
+        <div class="about-card shadow">
+          <img src="assets/about-3.jpg" alt="Logistics" />
+          <div class="about-card-body">
+            <h3 data-i18n="about.cards.2.title">Logistik Andal</h3>
+            <p class="muted" data-i18n="about.cards.2.desc">
+              Dokumentasi ekspor efisien dan pengiriman tepat waktu.
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="products.title">Produk Kami</h2>
+        <!-- <p class="section-lead" data-i18n="products.subtitle">
+          Komoditas unggulan untuk pasar global
+        </p> -->
+      </div>
+      <div class="grid" id="productsGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="why.title">
+          Mengapa Memilih Kami
+        </h2>
+        <!-- <p class="section-lead" data-i18n="why.subtitle">
+          Alasan Klien Mempercayai PT LBM
+        </p> -->
+      </div>
+      <div class="grid" id="whyGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="process.title">Proses Kami</h2>
+        <!-- <p class="section-lead" data-i18n="process.subtitle">
+          Transparan dari hulu ke hilir
+        </p> -->
+      </div>
+      <div class="grid" id="processGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="testimonials.title">Testimoni</h2>
+        <p class="section-lead" data-i18n="testimonials.subtitle">
+          Apa kata mitra & pembeli kami
+        </p>
+      </div>
+
+      <div class="slider shadow" aria-roledescription="carousel">
+        <button class="arrow prev" id="prev" aria-label="Previous">◀</button>
+        <div class="slides" id="slides"></div>
+        <button class="arrow next" id="next" aria-label="Next">▶</button>
+      </div>
+      <div class="dots" id="dots" aria-label="slider pagination"></div>
+    </section>
+
+    <!-- Contact + Map -->
+    <section id="contact" class="section container">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="contact.title">Hubungi Kami</h2>
+        <p class="section-lead" data-i18n="contact.text">
+          Siap berbisnis? Hubungi kami hari ini.
+        </p>
+      </div>
+
+      <form id="contactForm" class="contact-form shadow" novalidate>
+        <div class="field">
+          <label for="name" data-i18n="contact.form.nameLabel">Nama</label>
+          <input
+            type="text"
+            id="name"
+            required
+            data-i18n-placeholder="contact.form.name"
+            placeholder="Nama Anda"
+          />
+        </div>
+        <div class="field">
+          <label for="email" data-i18n="contact.form.emailLabel">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            data-i18n-placeholder="contact.form.email"
+            placeholder="Email Anda"
+          />
+        </div>
+        <div class="field">
+          <label for="message" data-i18n="contact.form.messageLabel"
+            >Pesan</label
+          >
+          <textarea
+            rows="4"
+            id="message"
+            data-i18n-placeholder="contact.form.message"
+            placeholder="Pesan Anda"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          data-i18n="contact.form.submit"
+        >
+          Kirim Pesan
+        </button>
+        <p
+          class="form-status"
+          id="formStatus"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+
+      <div class="map-head">
+        <h3 data-i18n="map.title">Negara Konsumen Kopi Kami</h3>
+        <p class="muted" data-i18n="map.subtitle">
+          Rute pengiriman ditandai garis merah dari Indonesia
+        </p>
+      </div>
+      <div
+        id="map"
+        class="map shadow"
+        role="application"
+        aria-label="Consumer countries map"
+      ></div>
+
+      <p class="contact-meta muted" style="text-align: center">
+        📍 Pekalongan, Indonesia — ✉️ info@ptlancarbarokahmanfaat.com — 📱 +62
+        877-1777-2773
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.text">
+        © 2025 PT Lancar Barokah Manfaat. Hak cipta dilindungi.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
