@@ -10,8 +10,8 @@
     },
     "hero": {
       "kicker": "Ekspor • Kopi • Rempah",
-      "title": "Suplayer Kopi Terpercaya Pilihan Anda",
-      "subtitle": "Kami mengekspor kopi premium, cengkeh, dan briket arang kelapa — dipercaya oleh pembeli global."
+      "title": "Suplayer briquettes Terpercaya Pilihan Anda",
+      "subtitle": "Kami mengekspor briket arang kelapa — dipercaya oleh pembeli global."
     },
     "cta": {
       "contact": "Hubungi Kami"
@@ -153,8 +153,8 @@
     },
     "hero": {
       "kicker": "Export • Coffee • Spices",
-      "title": "Your Trusted Coffee Suplayer of Choice",
-      "subtitle": "We export premium coffee, cloves, and coconut charcoal briquettes — trusted by global buyers."
+      "title": "Your Trusted briquettes Suplayer of Choice",
+      "subtitle": "We export coconut charcoal briquettes — trusted by global buyers."
     },
     "cta": {
       "contact": "Get in Touch"
@@ -286,3 +286,4 @@
     }
   }
 }
+
