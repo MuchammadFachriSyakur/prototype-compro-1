@@ -39,7 +39,7 @@
       "subtitle": "Komoditas unggulan untuk pasar global",
       "list": [
         {
-          "name": "Biji Kopi (Arabika & Robusta)",
+          "name": "Kopi",
           "desc": "Dipetik dari perkebunan terbaik Indonesia, cocok untuk roastery & importers.",
           "image": "assets/coffee.jpg"
         },
@@ -54,8 +54,8 @@
           "image": "assets/charcoal.jpg"
         },
         {
-          "name": "Produk Unggulan Lainnya",
-          "desc": "Kami juga mengekspor komoditas pertanian dan produk olahan dari hasil pertanian.",
+          "name": "Suplaiyer Produk Pertanian Terpercaya",
+          "desc": "Pilihan Anda. Kami mengekspor Produk Perkebunan - dipercaya oleh pembeli global",
           "image": "assets/spices.jpg"
         }
       ]
@@ -182,7 +182,7 @@
       "subtitle": "Flagship commodities for global markets",
       "list": [
         {
-          "name": "Coffee Beans (Arabica & Robusta)",
+          "name": "Coffee",
           "desc": "Sourced from Indonesia’s finest estates; ideal for roasteries & importers.",
           "image": "assets/coffee.jpg"
         },
@@ -197,8 +197,8 @@
           "image": "assets/charcoal.jpg"
         },
         {
-          "name": "Specialty Products",
-          "desc": "We also export agricultural commodities and processed products derived from agricultural produce.",
+          "name": "Your Trusted Agricultural Product Supplier",
+          "desc": "Your reliable choice. We export plantation products trusted by global buyers.",
           "image": "assets/spices.jpg"
         }
       ]
@@ -286,6 +286,3 @@
     }
   }
 }
-
-
-
