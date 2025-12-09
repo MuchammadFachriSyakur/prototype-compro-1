@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://muchammadfachrisyakur.github.io/prototype-compro-1/sitemap.xml

@@ -16,28 +16,71 @@
       content="Indonesia export coffee, cloves exporter, charcoal briquettes supplier, agricultural products export Indonesia, PT Lancar Barokah Manfaat"
     />
     <meta name="author" content="PT Lancar Barokah Manfaat" />
-
-    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="canonical"
+      href="https://muchammadfachrisyakur.github.io/prototype-compro-1/"
+    />
+
+    <meta
+      property="og:title"
+      content="Indonesia Coffee, Cloves & Coconut Briquette Exporter"
+    />
+    <meta
+      property="og:description"
+      content="Trusted Indonesian exporter of coffee beans, cloves, coconut briquettes, and agricultural commodities."
+    />
+    <meta
+      property="og:image"
+      content="https://muchammadfachrisyakur.github.io/prototype-compro-1/assets/logo.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://muchammadfachrisyakur.github.io/prototype-compro-1/"
+    />
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PT Lancar Barokah Manfaat",
+        "url": "https://muchammadfachrisyakur.github.io/prototype-compro-1/",
+        "logo": "https://muchammadfachrisyakur.github.io/prototype-compro-1/assets/logo.jpg",
+        "description": "Indonesian export company specializing in coffee, cloves, coconut briquettes, and agricultural commodities.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "ID"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+62 877-1777-2773",
+          "contactType": "sales"
+        }
+      }
+    </script>
   </head>
 
   <body>
-    <!-- Header -->
     <header class="site-header">
       <div class="brand">
-        <img src="assets/logo.jpg" alt="PT LBM Logo" class="brand-logo" />
+        <img
+          src="assets/logo.jpg"
+          alt="PT Lancar Barokah Manfaat Indonesian Export Company Logo"
+          class="brand-logo"
+        />
         <div class="brand-meta">
-          <h1 class="brand-title">PT Lancar Barokah Manfaat</h1>
-          <!-- <span class="brand-tag">Indonesia Exporter</span> -->
+          <p class="brand-title">PT Lancar Barokah Manfaat</p>
         </div>
       </div>
 
@@ -65,8 +108,7 @@
       </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero" id="hero" aria-label="Hero">
+    <section class="hero" id="hero" aria-label="Hero" loading="lazy">
       <div class="hero-overlay"></div>
       <div class="hero-inner container">
         <h1 class="hero-title" data-i18n="hero.title">
@@ -87,7 +129,6 @@
       <div class="scroll-indicator" aria-hidden="true"><span></span></div>
     </section>
 
-    <!-- About -->
     <section id="about" class="section container">
       <div class="section-head">
         <h2 class="section-title" data-i18n="about.title">Tentang Kami</h2>
@@ -97,73 +138,31 @@
           produk olahan.
         </p>
       </div>
-      <!-- <div class="about-grid">
-        <div class="about-card shadow">
-          <img src="assets/about-1.jpg" alt="Quality control" />
-          <div class="about-card-body">
-            <h3 data-i18n="about.cards.0.title">Kualitas Ketat</h3>
-            <p class="muted" data-i18n="about.cards.0.desc">
-              Setiap batch diperiksa dan memenuhi standar internasional.
-            </p>
-          </div>
-        </div>
-        <div class="about-card shadow">
-          <img src="assets/about-2.jpg" alt="Sourcing" />
-          <div class="about-card-body">
-            <h3 data-i18n="about.cards.1.title">Sumber Tepercaya</h3>
-            <p class="muted" data-i18n="about.cards.1.desc">
-              Kemitraan langsung dengan petani & produsen lokal terbaik.
-            </p>
-          </div>
-        </div>
-        <div class="about-card shadow">
-          <img src="assets/about-3.jpg" alt="Logistics" />
-          <div class="about-card-body">
-            <h3 data-i18n="about.cards.2.title">Logistik Andal</h3>
-            <p class="muted" data-i18n="about.cards.2.desc">
-              Dokumentasi ekspor efisien dan pengiriman tepat waktu.
-            </p>
-          </div>
-        </div>
-      </div> -->
     </section>
 
-    <!-- Products -->
     <section id="products" class="section container">
       <div class="section-head">
         <h2 class="section-title" data-i18n="products.title">Produk Kami</h2>
-        <!-- <p class="section-lead" data-i18n="products.subtitle">
-          Komoditas unggulan untuk pasar global
-        </p> -->
       </div>
       <div class="grid" id="productsGrid" aria-live="polite"></div>
     </section>
 
-    <!-- Why Us -->
     <section id="why" class="section container">
       <div class="section-head">
         <h2 class="section-title" data-i18n="why.title">
           Mengapa Memilih Kami
         </h2>
-        <!-- <p class="section-lead" data-i18n="why.subtitle">
-          Alasan Klien Mempercayai PT LBM
-        </p> -->
       </div>
       <div class="grid" id="whyGrid" aria-live="polite"></div>
     </section>
 
-    <!-- Process -->
     <section id="process" class="section container">
       <div class="section-head">
         <h2 class="section-title" data-i18n="process.title">Proses Kami</h2>
-        <!-- <p class="section-lead" data-i18n="process.subtitle">
-          Transparan dari hulu ke hilir
-        </p> -->
       </div>
       <div class="grid" id="processGrid" aria-live="polite"></div>
     </section>
 
-    <!-- Testimonials -->
     <section id="testimonials" class="section container">
       <div class="section-head">
         <h2 class="section-title" data-i18n="testimonials.title">Testimoni</h2>
@@ -180,7 +179,6 @@
       <div class="dots" id="dots" aria-label="slider pagination"></div>
     </section>
 
-    <!-- Contact + Map -->
     <section id="contact" class="section container">
       <div class="section-head">
         <h2 class="section-title" data-i18n="contact.title">Hubungi Kami</h2>
@@ -261,7 +259,6 @@
       </p>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="main.js" defer></script>
   </body>
